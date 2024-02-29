@@ -1,0 +1,15 @@
+{
+  "english": "english",
+  "polish": "polish",
+  "ukrainian": "ukrainian",
+  "show_dialog": "Show dialog",
+  "created": "Created",
+  "in_progress": "In Progress",
+  "ready": "Ready",
+  "completed": "Completed",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "paid": "Paid",
+  "unpaid": "Unpaid",
+  "update_order": "Update Order"
+}

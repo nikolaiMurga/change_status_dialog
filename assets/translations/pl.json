@@ -1,0 +1,15 @@
+{
+  "english": "Angielski",
+  "polish": "Polski",
+  "ukrainian": "Ukraiński",
+  "show_dialog": "Pokaż okno dialogowe",
+  "created": "Utworzony",
+  "in_progress": "W procesie",
+  "ready": "Gotowy",
+  "completed": "Zakończony",
+  "cancel": "Anulować",
+  "confirm": "Potwierdzać",
+  "paid": "Zapłacony",
+  "unpaid": "Nie zapłacony",
+  "update_order": "Aktualizuj zamówienie"
+}
