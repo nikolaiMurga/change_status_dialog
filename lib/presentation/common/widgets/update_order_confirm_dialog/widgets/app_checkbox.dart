@@ -13,7 +13,7 @@ class AppCheckBox extends StatelessWidget {
     return Checkbox(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4.0)),
       side: MaterialStateBorderSide.resolveWith(
-        (states) => BorderSide(width: 1.0, color: value ? AppColors.primaryColor : AppColors.grey),
+        (states) => BorderSide(width: 1.0, color: value ? AppColors.primaryColor : AppColors.whiteCream),
       ),
       activeColor: AppColors.primaryColor,
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,

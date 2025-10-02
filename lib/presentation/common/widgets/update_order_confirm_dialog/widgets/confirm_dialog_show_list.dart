@@ -23,14 +23,14 @@ class ConfirmDialogShowList extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Container(
-            decoration: BoxDecoration(color: AppColors.white, borderRadius: BorderRadius.circular(20)),
+            decoration: BoxDecoration(color: AppColors.primaryColor, borderRadius: BorderRadius.circular(20)),
             height: 350,
             width: 350,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 32),
               child: Column(
                 children: [
-                  Text(AppStrings.updateOrder.tr(), style: AppTextStyles.darkGrey20w600, textAlign: TextAlign.center),
+                  Text(AppStrings.updateOrder.tr(), style: AppTextStyles.white20w600, textAlign: TextAlign.center),
                   Padding(
                     padding: EdgeInsets.only(top: 24.0),
                     child: InkWell(
@@ -39,9 +39,9 @@ class ConfirmDialogShowList extends StatelessWidget {
                         height: 48,
                         width: double.maxFinite,
                         decoration: BoxDecoration(
-                            color: AppColors.whiteCream,
+                            color: AppColors.primaryColor,
                             borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: AppColors.lightGrey, width: 1)),
+                            border: Border.all(color: AppColors.whiteCream, width: 1)),
                         child: Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 14.0),
                           child: Row(
@@ -49,9 +49,9 @@ class ConfirmDialogShowList extends StatelessWidget {
                             children: [
                               Text(
                                 cubit.newOrderStatus.tr(),
-                                style: AppTextStyles.darkGrey16w400,
+                                style: AppTextStyles.white16w600,
                               ),
-                              const Icon(Icons.arrow_drop_down, color: AppColors.lightGrey)
+                              const Icon(Icons.arrow_drop_down, color: AppColors.whiteCream)
                             ],
                           ),
                         ),

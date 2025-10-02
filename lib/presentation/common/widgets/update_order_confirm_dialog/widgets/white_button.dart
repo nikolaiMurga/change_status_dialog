@@ -14,10 +14,10 @@ class WhiteButton extends StatelessWidget {
     return Container(
       height: 48,
       width: double.maxFinite,
-      decoration: AppDecorations.whiteButtonDecor,
+      decoration: AppDecorations.transparentButtonDecor,
       child: TextButton(
         onPressed: onPressed,
-        child: Text(text, style: AppTextStyles.green16w600),
+        child: Text(text, style: AppTextStyles.white16w600),
       ),
     );
   }

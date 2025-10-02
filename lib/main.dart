@@ -9,20 +9,23 @@ import 'presentation/demo/demo_page.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await EasyLocalization.ensureInitialized();
-  final DemoCubit demoCubit = DemoCubit();
+  // final DemoCubit demoCubit = DemoCubit(); // singleton
 
-  runApp(EasyLocalization(
-    supportedLocales: const [AppConstants.english, AppConstants.polish, AppConstants.ukraine],
-    path: AppConstants.localePath,
-    fallbackLocale: AppConstants.english,
-    useOnlyLangCode: true,
-    child: MultiBlocProvider(
+  runApp(
+    EasyLocalization(
+      supportedLocales: const [AppConstants.english, AppConstants.polish, AppConstants.ukraine],
+      path: AppConstants.localePath,
+      fallbackLocale: AppConstants.english,
+      useOnlyLangCode: true,
+      child: /*MultiBlocProvider(
       providers: [
-        BlocProvider<DemoCubit>(create: (_) => demoCubit),
+        // BlocProvider<DemoCubit>(create: (_) => demoCubit), // provide singleton to whole app
       ],
-      child: const DemoApp(),
+      child: */
+          const DemoApp(),
     ),
-  ));
+    // ));
+  );
 }
 
 class DemoApp extends StatelessWidget {
@@ -34,7 +37,7 @@ class DemoApp extends StatelessWidget {
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
       locale: context.locale,
-      home: const DemoPage(),
+      home:  DemoPage(),
     );
   }
 }

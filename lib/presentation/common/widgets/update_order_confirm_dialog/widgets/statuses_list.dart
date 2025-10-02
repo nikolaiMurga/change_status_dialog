@@ -31,7 +31,7 @@ class StatusesList extends StatelessWidget {
                 height: 55,
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
-                  child: Text(list[index].tr(), style: AppTextStyles.darkGrey15w400.withHeight(22 / 15)),
+                  child: Text(list[index].tr(), style: AppTextStyles.white16w600.withHeight(22 / 15)),
                 ),
               ),
             );

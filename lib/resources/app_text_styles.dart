@@ -8,7 +8,7 @@ class AppTextStyles {
   static const white16w600 = TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: AppColors.white);
 
   // main gray
-  static const mainGrey16w600 = TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: AppColors.mainGrey);
+  static const mainGrey16w600 = TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: AppColors.grey);
 
   // dark gery
   static const darkGrey15w400 = TextStyle(fontSize: 15, fontWeight: FontWeight.w400, color: AppColors.darkGrey);

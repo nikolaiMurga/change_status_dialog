@@ -8,6 +8,8 @@ part 'demo_state.dart';
 class DemoCubit extends Cubit<DemoState> {
   DemoCubit() : super(DemoInitial());
 
+  factory DemoCubit.demoCubit() => DemoCubit(); // factory
+
   String orderStatus = AppStrings.created;
   bool paidStatus = false;
 

@@ -1,3 +1,4 @@
+import 'package:change_status_dialog/presentation/common/widgets/update_order_confirm_dialog/widgets/white_button.dart';
 import 'package:change_status_dialog/presentation/demo/bloc/demo_cubit.dart';
 import 'package:change_status_dialog/resources/app_extentions.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -27,7 +28,7 @@ class DemoScreen extends StatelessWidget with ModalDialogMixin {
   Widget build(BuildContext context) {
     final cubit = context.read<DemoCubit>();
     return Scaffold(
-      backgroundColor: AppColors.whiteCream,
+      backgroundColor: AppColors.primaryColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -37,17 +38,20 @@ class DemoScreen extends StatelessWidget with ModalDialogMixin {
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(cubit.getOrderStatus.tr(), style: AppTextStyles.darkGrey20w600),
-                    Text(cubit.getPaidStatus.paidStatusToString().tr()),
+                    Text(cubit.getOrderStatus.tr(), style: AppTextStyles.white20w600),
+                    Text(cubit.getPaidStatus.paidStatusToString().tr(), style: AppTextStyles.white16w600),
                   ],
                 );
               },
             ),
             const SizedBox(height: 25),
-            MaterialButton(
-              onPressed: () => onPressed(cubit, context),
-              color: AppColors.primaryColor,
-              child: Text(AppStrings.showDialog.tr(), style: AppTextStyles.white20w600),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 100.0),
+              child: WhiteButton(
+                onPressed: () => onPressed(cubit, context),
+                // color: AppColors.primaryColor,
+                text: AppStrings.showDialog.tr(),
+              ),
             ),
           ],
         ),
